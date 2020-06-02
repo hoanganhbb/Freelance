@@ -1,0 +1,37 @@
+.header-wrapper {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.navbar {
+  &-avatar {
+    height: 40px;
+    width: 40px;
+  }
+
+  &-notifications {
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+    ion-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: $font-size-20;
+    }
+  }
+
+  &-badge {
+    position: absolute;
+    transform: translate(50%, 50%);
+    top: -50%;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: $font-size-12;
+  }
+}
