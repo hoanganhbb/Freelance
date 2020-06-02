@@ -1,0 +1,30 @@
+.form-group {
+  label {
+    margin-bottom: 5px;
+    font-size: $font-size-12;
+
+    &.required {
+      position: relative;
+
+      &:before {
+        content: '*';
+        position: absolute;
+        top: 0;
+        right: -8px;
+        color: $cl-danger;
+        font-size: $font-size-16;
+      }
+    }
+  }
+
+  input, select {
+    padding: 5px 10px;
+    height: 30px;
+    font-size: $font-size-12;
+
+    ::placeholder {
+      font-size: $font-size-12;
+      color: $cl-text-secondary;
+    }
+  }
+}

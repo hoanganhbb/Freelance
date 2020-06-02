@@ -8,24 +8,20 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>Bootstrap Stater</title>
+  <title>KMS Page</title>
 
   <!-- Icons for this template -->
-  <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <!-- Stylesheet -->
   <!-- build:css -->
   <link href="assets/css/app.css" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
   <!-- endbuild -->
 </head>
 
 <body>
   <section>
     <div class="header-wrapper">
-      <div class="container-fluid d-flex justify-content-sm-between">
+      <div class="container-fluid d-flex justify-content-between">
         <nav class="breadcrumb m-0 px-0 bg-white">
           <a class="breadcrumb-item" href="#">KMS home</a>
           <a class="breadcrumb-item" href="#">Patient Profile</a>
@@ -33,7 +29,7 @@
         </nav>
         <div class="navbar-info d-flex align-self-center">
           <div class="navbar-notifications">
-            <ion-icon name="notifications-outline"></ion-icon>
+            <img src="./assets/img/bell.svg" alt="" width="20" height="20" title="Bootstrap">
             <span class="navbar-badge badge-danger rounded-circle">12</span>
           </div>
           <div class="navbar-avatar ml-3">
@@ -46,24 +42,302 @@
   <section>
     <div class="main-wrapper">
       <div class="container-fluid p-0">
-        <div class="row">
-          <div class="col-sm-4 panel-left">
-            <ul class="list">
-              <li class="list-item">Cras justo odio</li>
-              <li class="list-item">Dapibus ac facilisis in</li>
-              <li class="list-item">Morbi leo risus</li>
-              <li class="list-item">Porta ac consectetur ac</li>
-              <li class="list-item">Vestibulum at eros</li>
-            </ul>
+        <div class="row no-gutters">
+          <div class="">
+            <div class="panel-left">
+              <ul class="sidebar-menu">
+                <li class="sidebar-item sidebar-item--page-name">Patient Profile</li>
+                <li class="sidebar-item">General Information</li>
+                <li class="sidebar-item sidebar-item__active" data-toggle="collapse" href="#contentId" aria-expanded="false" aria-controls="contentId">Patient Details</li>
+                <div class="collapse-wrapper">
+                  <div class="collapse" id="contentId">
+                    <li class="sidebar-item">Personal Information</li>
+                    <li class="sidebar-item">Address Contact</li>
+                    <li class="sidebar-item">Information Emergency</li>
+                    <li class="sidebar-item">Contact Detail</li>
+                    <li class="sidebar-item">Payment Type</li>
+                  </div>
+                </div>
+                <li class="sidebar-item">Employment Information</li>
+                <li class="sidebar-item">Patient Case History</li>
+                <li class="sidebar-item">Smoking History</li>
+                <li class="sidebar-item">Drinking History</li>
+                <li class="sidebar-item">Educational Background</li>
+                <li class="sidebar-item">Patient Visit History</li>
+                <li class="sidebar-item">Finalize Profile</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-sm-8">
-            <ul>
-              <li>dsadasdasdasdasdadasd</li>
-              <li>dsadasdasdasdasdadasd</li>
-              <li>dsadasdasdasdasdadasd</li>
-              <li>dsadasdasdasdasdadasd</li>
-              <li>dsadasdasdasdasdadasd</li>
-            </ul>
+          <div class="col">
+            <div class="panel-right main-content">
+              <div class="px-3">
+                <div class="main-content__heading">Create New Patient</div>
+                <div class="main-content__upload-avatar upload-avatar d-flex align-items-center">
+                  <div class="upload-avatar__placeholder">
+                    <img src="./assets/img/myAvatar.png" class="img-fluid rounded-circle"" alt="">
+                  </div>
+                  <div class="upload-avatar__button-upload ml-4"><button type="button" class="btn btn-primary">
+                    <svg class="bi bi-upload" width="20" height="20" viewBox="0 0 20 20" fill="white" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M.5 8a.5.5 0 0 1 .5.5V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8.5a.5.5 0 0 1 1 0V12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8.5A.5.5 0 0 1 .5 8zM5 4.854a.5.5 0 0 0 .707 0L8 2.56l2.293 2.293A.5.5 0 1 0 11 4.146L8.354 1.5a.5.5 0 0 0-.708 0L5 4.146a.5.5 0 0 0 0 .708z"/>
+                      <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0v-8A.5.5 0 0 1 8 2z"/>
+                    </svg>
+                      Upload Profile Photo
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="main-content__category-name">Patient Profile</div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold required">Patient ID</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Patient ID" aria-describedby="helpId">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold required">Active Patient ID</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Active Patient ID" aria-describedby="helpId">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold required">Patient Classification</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Patient Classification" aria-describedby="helpId">
+                    </div>
+                  </div>
+                </div>
+                <!-- ================================= Row ============================ -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Title</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold required">Give Name</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Give Name" aria-describedby="helpId">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold required">Last Name</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Last Name" aria-describedby="helpId">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold required">Gender</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- ================================= Row ============================ -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="font-weight-bold required">Place of Birth</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="Place of Birth" aria-describedby="helpId">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="date" class="font-weight-bold required">Date of Birth</label>
+                      <input type="date"class="form-control" name="date" id="date" aria-describedby="helpId" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-end">
+                    <div class="form-group">
+                      <label for="date" class="font-weight-bold required">Age</label>
+                      <div class="row no-gutters">
+                        <div class="col">
+                          <div class="form-group">
+                            <div class="d-flex align-items-center">
+                              <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                              <label for="" class="font-weight-bold px-2 m-0">Year</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            <div class="d-flex align-items-center">
+                              <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                              <label for="" class="font-weight-bold px-2 m-0">Year</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            <div class="d-flex align-items-center">
+                              <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                              <label for="" class="font-weight-bold px-2 m-0">Year</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold required">Patient Type</label>
+                      <select class="form-control" name="title" id="title" placeholder="Patient Type">
+                        <option>Patient Type</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- ================================= Row ============================ -->
+                <div class="row">
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label font-weight-bold " for="defaultCheck1">
+                        Is Active
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-content__category-name">Personal Infomation</div>
+                <!-- ================================= Row ============================ -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Marital Status</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Marital Status</option>
+                        <option>Not Maried</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Religion</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Islam</option>
+                        <option>Vietnam</option>
+                        <option>US</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Nationality</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Indonesia</option>
+                        <option>Vietnames</option>
+                        <option>England</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Ethnicity</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Indonesia</option>
+                        <option>Vietnames</option>
+                        <option>England</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- ================================= Row ============================ -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Blood Type</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>AB</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-1 col-md-12 col-lg-3">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Rhesus</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Positive</option>
+                        <option>Negative</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">ID Number</label>
+                      <input type="date"class="form-control" name="date" id="date" aria-describedby="helpId" placeholder="ID Number">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">BPJS Card Number</label>
+                      <input type="date"class="form-control" name="date" id="date" aria-describedby="helpId" placeholder="BPJS Card Number">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Occupation</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Select Occupation</option>
+                        <option>Vietnames</option>
+                        <option>England</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- ================================= Row ============================ -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">External Patient</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>AB</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-1 col-md-12 col-lg-3">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">Patient has Dead</label>
+                      <select class="form-control" name="title" id="title" placeholder="title">
+                        <option>Positive</option>
+                        <option>Negative</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-24 col-md-24 col-lg-12">
+                    <div class="form-group">
+                      <label for="title" class="font-weight-bold">External Note</label>
+                      <textarea type="date"class="form-control" name="date" id="date" aria-describedby="helpId" placeholder="External Note"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer container-fluid">
+          <div class="row">
+            <div class="col-24">
+              <div class="footer-action">
+                <button type="button" class="btn btn-outline-primary">Back</button>
+                <button type="button" class="btn btn-primary">Next</button>
+                <button type="button" class="btn btn-primary-first">Done</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -73,10 +347,16 @@
   <!-- Bootstrap core JavaScript
 ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <!-- <script src="assets/js/vendor/jquery.slim.min.js"></script>
+  <script src="assets/js/vendor/jquery-3.5.1.slim.min.js"></script>
+  
   <script src="assets/js/vendor/popper.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.min.js"></script> -->
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <!-- <script src="assets/js/vendor/ionicons.min.js"></script> -->
+  <script src="assets/js/vendor/font-asw.js"></script>
   <!-- build:js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>
   <!-- endbuild -->
 </body>

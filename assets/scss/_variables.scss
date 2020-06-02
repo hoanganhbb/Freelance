@@ -1,4 +1,37 @@
-// Variables:root {
+// Variables
+// ======================================================
+// Colors
+// ======================================================
+
+$cl-primary: #5556EE;
+$cl-danger: #d9534f;
+$cl-white: #fff;
+$cl-dark: #40414b;
+$cl-light: #d8d8d8;
+$cl-black: #262626;
+$cl-black-2: #000;
+// $cl-gray: #666;
+$cl-gray-2: #999;
+$cl-gray-3: #9b9b9b;
+$cl-gray-4: #22333D;
+$cl-light-gray: #f9f9f9;
+$cl-light-gray-2: #cacaca;
+$cl-light-gray-3: #eee;
+$cl-light-green: #88e18e;
+$cl-fresh-green: #37cc41;
+$cl-green-2: #4BC498;
+$cl-orange: #ff9546;
+$cl-select: #516a7b;
+$cl-select-2: #2F4858;
+$cl-violet-primary: #4C4FBA;
+
+$cl-text-primary: #30317F;
+$cl-text-secondary: #ccc;
+
+$background-modal: rgba(0,0,0, 0.4);
+
+$border-radius: 2px;
+
 
 //Fonts
 $font-notosan:            'Noto Sans', sans-serif;
@@ -45,3 +78,17 @@ $z-index-toast: 999;
 $z-index-menu: 901;
 $z-index-loading: 9999;
 $z-index-product-tag: 9;
+
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1366px
+);

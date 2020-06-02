@@ -3,6 +3,8 @@
 // ========
 @import "variables";
 @import "mixins";
+@import "font";
+@import "reset";
 @import "general";
 @import "layout";
 @import "module";
@@ -10,7 +12,10 @@
 @import "bootstrap/bootstrap";
 
 // Your style
-@import "components/header";
+@import "containers/header";
+
+@import "components/button";
+@import "components/form";
 
 // Page
 @import "page/kms-page.scss"

@@ -1,0 +1,110 @@
+.panel-left {
+  height: calc(100vh - 70px);
+  background-color: #EEF7FF;
+  padding: 15px 0;
+
+  .sidebar {
+    &-menu {
+      margin: 0;
+      padding: 0;
+      width: 250px;
+
+      .collapse-wrapper {
+        .sidebar-item {
+          padding-left: 30px;
+
+          &:last-child {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    &-item {
+      list-style: none;
+      transition: all 300ms;
+      padding: 5px 15px;
+
+      &:hover {
+        background-color: rgb(189, 217, 241);
+        cursor: pointer;
+      }
+
+      &--page-name {
+        color: $cl-text-secondary;
+        font-weight: $font-weight-bold;
+        margin-bottom: 10px;
+
+        &:hover {
+          background: none;
+        }
+      }
+
+      &__active {
+        color: $cl-text-primary;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}
+
+.main-content {
+  padding-top: 15px;
+  font-size: $font-size-14;
+  height: calc(100vh - 150px);
+  overflow: auto;
+
+  @include respond-to('xl') {
+    padding-right: 150px;
+  }
+
+  &__heading {
+    font-size: $font-size-26;
+    color: $cl-text-primary;
+    font-weight: $font-weight-bold;
+    margin-bottom: 20px;
+  }
+
+  &__category-name {
+    font-size: $font-size-16;
+    color: $cl-text-secondary;
+    font-weight: $font-weight-bold;
+    margin: 15px 0;
+  }
+
+  .upload-avatar {
+    &__placeholder {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.main-footer {
+  position: absolute;
+  width: calc(100% - 250px);
+  bottom: 0;
+  height: 80px;
+  border-top: 1px solid #eee;
+  background-color: $cl-white;
+  margin-left: 250px;
+
+  @include respond-to('xl') {
+    padding-right: 150px;
+  }
+
+  .footer-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+
+    button {
+      margin: 0 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

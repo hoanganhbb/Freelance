@@ -19,10 +19,11 @@ gulp.task('clean', function() {
 // Copy third party libraries from node_modules into /vendor
 gulp.task('vendor:js', function() {
   return gulp.src([
-    './node_modules/bootstrap/dist/js/*',
-    './node_modules/jquery/dist/*',
-    '!./node_modules/jquery/dist/core.js',
-    './node_modules/popper.js/dist/umd/popper.*'
+    './assets/js/extension/bootstrap.min.js',
+    './assets/js/extension/jquery-3.5.1.slim.min.js',
+    './assets/js/extension/popper.min.js',
+    './assets/js/extension/ionicons.min.js',
+    './assets/js/extension/font-asw.js'
   ])
     .pipe(gulp.dest('./assets/js/vendor'));
 });
@@ -45,9 +46,11 @@ gulp.task('vendor', gulp.parallel('vendor:fonts', 'vendor:js'));
 // Copy vendor's js to /dist
 gulp.task('vendor:build', function() {
   var jsStream = gulp.src([
-    './assets/js/vendor/bootstrap.bundle.min.js',
-    './assets/js/vendor/jquery.slim.min.js',
-    './assets/js/vendor/popper.min.js'
+    './assets/js/extension/bootstrap.min.js',
+    './assets/js/extension/jquery-3.5.1.slim.min.js',
+    './assets/js/extension/popper.min.js',
+    './assets/js/extension/ionicons.min.js',
+    './assets/js/extension/font-asw.js'
   ])
     .pipe(gulp.dest('./dist/assets/js/vendor'));
   var fontStream = gulp.src(['./assets/fonts/font-awesome/**/*.*']).pipe(gulp.dest('./dist/assets/fonts/font-awesome'));
@@ -127,7 +130,6 @@ gulp.task('dev', function browserDev(done) {
 gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor'), 'vendor:build', function copyAssets() {
   return gulp.src([
     '*.html',
-    'favicon.ico',
     "assets/img/**"
   ], { base: './'})
     .pipe(gulp.dest('dist'));

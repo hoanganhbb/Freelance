@@ -1,0 +1,24 @@
+.btn {
+  border-radius: $border-radius;
+  font-size: $font-size-12;
+  min-width: 100px;
+  font-weight: $font-weight-bold;
+
+  &-primary {
+    background-color: $cl-primary;
+
+    &:hover {
+      background-color: $cl-text-primary;
+    }
+  }
+
+  &-primary-first {
+    background-color: $cl-violet-primary;
+    color: white;
+
+    &:hover {
+      background-color: $cl-text-primary;
+      color: white;
+    }
+  }
+}
