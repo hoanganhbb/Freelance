@@ -9,6 +9,7 @@ var gulp = require('gulp'),
   merge = require('merge-stream'),
   htmlreplace = require('gulp-html-replace'),
   autoprefixer = require('gulp-autoprefixer'),
+  babel = require('gulp-babel'),
   browserSync = require('browser-sync').create();
 
 // Clean task
