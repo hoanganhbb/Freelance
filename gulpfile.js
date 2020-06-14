@@ -64,6 +64,13 @@ gulp.task('bootstrap:scss', function() {
     .pipe(gulp.dest('./assets/scss/bootstrap'));
 });
 
+// gulp.task('css', function() {
+//   return gulp.src("./assets/css/animation.css")
+//     .pipe(cleanCSS())
+//     .pipe(autoprefixer())
+//     .pipe(gulp.dest('./assets/css/app.css'))
+// });
+
 // Compile SCSS(SASS) files
 gulp.task('scss', gulp.series('bootstrap:scss', function compileScss() {
   return gulp.src(['./assets/scss/*.scss'])
