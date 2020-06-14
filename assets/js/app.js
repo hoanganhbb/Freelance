@@ -22,8 +22,6 @@ $("document").ready(function () {
   slideWrapper.css('padding-top', currentItemHeight);
   overlay.css('height', currentItemHeight);
 
-  console.log(slideImage)
-
   nextButton.click(function() {
     // if (index === 0 ) slideWrapper.css('padding-top', 0);
     slideWrapper.css('transform', 'translateY(' + (index * -150) + 'px)');
